@@ -1,0 +1,24 @@
+html{
+  cursor: url("./assets/images/cursor/arrow.png"), default !important;
+}
+
+button, a{
+  &:hover{
+    cursor: url("./assets/images/cursor/hand.png"), pointer !important;
+  }
+}
+
+body{
+  background: #131419;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+input:focus{
+  outline: 1px solid #4447E2;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
